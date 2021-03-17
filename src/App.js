@@ -5,8 +5,8 @@ const App = {
         try {
             await Notifyer.init()
             Notifyer.notify({
-                title: "hora do post",
-                body: "mensagem aqui"
+                title: "Hora de postar!!",
+                body: "Corpo da mensagem."
             })
 
         } catch (err) {
