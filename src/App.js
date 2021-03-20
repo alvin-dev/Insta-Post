@@ -1,13 +1,15 @@
-import {Notifyer} from './Notifyer.js'
+import { Notifyer } from './Notifyer.js';
+import { Timer } from './Timer.js';
 
 const App = {
     async start() {
         try {
-            await Notifyer.init()
-            Notifyer.notify({
-                title: "Hora de postar!!",
-                body: "Corpo da mensagem."
-            })
+            Timer.init()
+            // await Notifyer.init()
+            // Notifyer.notify({
+            //     title: "Hora de postar!!",
+            //     body: "Corpo da mensagem."
+            // })
 
         } catch (err) {
             console.log(err.message);
